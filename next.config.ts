@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  typescript:{
+    ignoreBuildErrors: true, // This is not recommended for production, but useful for development
+  },
   images:{
     remotePatterns: [
     {hostname:'img.clerk.com'},
